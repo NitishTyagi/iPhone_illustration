@@ -1,2 +1,4 @@
 # iPhone_illustration
-<img src="https://github.com/NitishTyagi/iPhone_illustration/blob/master/demo.png" alt="demo image">
+<img src="/demo.png" alt="demo image">
+<br>
+<a href="https://codesandbox.io/s/github/NitishTyagi/iPhone_illustration/tree/master/" target="__blank">Demo</a>
