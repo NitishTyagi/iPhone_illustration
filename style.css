@@ -1,0 +1,78 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #5684c0;
+}
+
+.title {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 50px 0 70px;
+}
+
+.iphone {
+  position: relative;
+  box-sizing: border-box;
+  height: 600px;
+  width: 320px;
+  margin: 20px auto;
+  padding: 87px 30px;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  overflow: auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.08);
+  background-image: radial-gradient(circle, #fff 15px, transparent 18px),
+    radial-gradient(circle, #e2e0e0 20px, transparent 20px),
+    radial-gradient(circle, #e2e0e0 5px, transparent 5px),
+    linear-gradient(to right, #efefef 30px, transparent 0),
+    linear-gradient(to left, #efefef 30px, transparent 0),
+    linear-gradient(to top, #efefef 70px, transparent 0),
+    linear-gradient(to bottom, #efefef 70px, transparent 0),
+    linear-gradient(to bottom, transparent 25%, #5684c0 25%);
+  background-position: 0px 265px, 0px 265px, -50px -264px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 120px;
+  background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, repeat-y;
+}
+
+.iphone::after,
+.iphone::before {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.iphone::after {
+  content: "Banner";
+  top: 120px;
+  color: #5684c0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 16px -159px 0px -71px #e2e0e0;
+  width: 221px;
+  margin: auto;
+  border-radius: 160px;
+}
+
+.iphone::before {
+  content: "Content";
+  top: 380px;
+}
