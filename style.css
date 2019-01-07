@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+
 body,
 html {
+  font-family: "Comfortaa", cursive;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
@@ -10,39 +14,63 @@ body {
 
 .title {
   color: #fff;
-  font-family: sans-serif;
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
-  margin: 50px 0 70px;
+  margin: 50px 0 50px;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .iphone {
+  margin: 20px 40px;
+}
+
+.iframe-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  height: 333px;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* iPhone illustration */
 .iphone {
   position: relative;
   box-sizing: border-box;
-  height: 600px;
-  width: 320px;
-  margin: 20px auto;
-  padding: 87px 30px;
+  height: 690px;
+  width: 350px;
+  margin: 20px;
+  padding: 90px 18px;
   background-color: #fff;
   color: #fff;
   border-radius: 30px;
   letter-spacing: 1px;
   overflow: auto;
   text-align: center;
-  font-family: sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.08);
-  background-image: radial-gradient(circle, #fff 15px, transparent 18px),
-    radial-gradient(circle, #e2e0e0 20px, transparent 20px),
+  background-image: radial-gradient(circle, #fff 21px, transparent 21px),
+    radial-gradient(circle, #e2e0e0 26px, transparent 26px),
     radial-gradient(circle, #e2e0e0 5px, transparent 5px),
-    linear-gradient(to right, #efefef 30px, transparent 0),
-    linear-gradient(to left, #efefef 30px, transparent 0),
-    linear-gradient(to top, #efefef 70px, transparent 0),
-    linear-gradient(to bottom, #efefef 70px, transparent 0),
+    linear-gradient(to right, #efefef 18px, transparent 0),
+    linear-gradient(to left, #efefef 18px, transparent 0),
+    linear-gradient(to top, #efefef 90px, transparent 0),
+    linear-gradient(to bottom, #efefef 90px, transparent 0),
     linear-gradient(to bottom, transparent 25%, #5684c0 25%);
-  background-position: 0px 265px, 0px 265px, -50px -264px, 0px 0px, 0px 0px,
+  background-position: 0px 300px, 0px 300px, 0px -310px, 0px 0px, 0px 0px,
     0px 0px, 0px 0px, 0px 120px;
   background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
@@ -59,20 +87,20 @@ body {
 }
 
 .iphone::after {
-  content: "Banner";
+  content: "";
   top: 120px;
   color: #5684c0;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 16px -159px 0px -71px #e2e0e0;
+  box-shadow: 0px -137px 0px -71px #e2e0e0;
   width: 221px;
   margin: auto;
   border-radius: 160px;
 }
 
 .iphone::before {
-  content: "Content";
+  content: "";
   top: 380px;
 }
